@@ -1,0 +1,87 @@
+@mixin buttonStyles($background, $hover, $color, $disabled-background, $disabled-color, $padding, $border-radius, $fontSize, $border) {
+  background: $background;
+  color: $color;
+  border: $border;
+  padding: $padding !important;
+  border-radius: $border-radius;
+  font-size: $fontSize !important;
+
+  &:hover,
+  &.hover {
+    color: $color;
+    background: $hover;
+  }
+
+  &:active,
+  &.active {
+    background: $background;
+  }
+
+  &:focus,
+  &.focus {
+    background: $background;
+    color: $color;
+  }
+
+  &:not(:disabled):not(.disabled):active:focus {
+    background: $background;
+    color: $color;
+  }
+
+  &:disabled,
+  &.disabled {
+    background: $disabled-background;
+    color: $disabled-color;
+  }
+}
+
+@mixin buttonOutlineStyles($background, $color, $border-color, $hover-color,) {
+  background: $background;
+  color: $color;
+  border: $border-base $border-color;
+  &:hover,
+  &.hover {
+    color: $hover-color;
+    background: $background;
+    border: $border-base $border-color;
+  }
+
+  &:active,
+  &.active {
+    background: $background;
+    border: $border-base $border-color;
+  }
+
+  &:focus,
+  &.focus {
+    background: $background;
+    color: $color;
+    border: $border-base $border-color;
+  }
+
+  &:not(:disabled):not(.disabled):active:focus {
+    background: $background;
+    color: $color;
+    border: $border-base $border-color;
+  }
+}
+
+@mixin homeFixedIcons($top, $padding, $BTRR, $BBRR, $bottom, $right, $borderRadius, $fontSize, $position, $marginTop) {
+  top: $top;
+  position: $position;
+  border: 0 !important;
+  background-color: $primary;
+  margin-top: $marginTop;
+  color: $white;
+  padding: $padding;
+  border-top-right-radius: $BTRR;
+  border-bottom-right-radius: $BBRR;
+  bottom: $bottom;
+  font-size: $fontSize !important;
+  right: $right;
+  border-radius: $borderRadius;
+  z-index: 1;
+  box-shadow: -1px 2px 3px 2px $primary;
+  cursor: pointer;
+
+}

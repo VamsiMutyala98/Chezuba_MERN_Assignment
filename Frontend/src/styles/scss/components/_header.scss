@@ -1,0 +1,100 @@
+.header {
+  background: #FFFFFF;
+  height: 70px;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-shadow: 0px 0px 12px 2px gray;
+
+  .search--wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .search--container {
+    position: relative;
+    width: 100%;
+    .search--container-input {
+      width: 100%;
+      border: 0px solid;
+      padding: 7px 20px;
+      border-radius: 30px;
+      box-shadow: 0px 0px 15px -4px gray;
+    }
+
+    .search--container-cross-icon {
+      position: absolute;
+      right: 50px;
+      cursor: pointer;
+      top: 13px;
+      font-size: 12px !important;
+      font-weight: bold !important;
+    }
+    .search--container-icon {
+      position: absolute;
+      right: 17px;
+      top: 13px;
+      font-size: 15px !important;
+    }
+  }
+  }
+  
+
+  .header--logos-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    .cart--items-container {
+      position: relative;
+      .cart--items-count {
+        position: absolute;
+        top: -14px;
+        right: -14px;
+        color: white;
+        background: red;
+        border-radius: 50%;
+        padding: 5px 7px;
+        font-size: 10px;
+        font-weight: bold;
+      }
+    }
+
+    .dropdown--container {
+      margin-left: 25px;
+      .dropdown--toggle {
+        border: 0px solid !important;
+        background: transparent;
+        border-radius: 30px;
+        box-shadow: 0px 0px 16px -4px gray;
+        padding: 5px 25px;
+      }
+      .dropdown--menu {
+        border-radius: 10px;
+        margin-top: 2px;
+        padding: 5px 17px;
+        border: 0px solid;
+        box-shadow: 0px 0px 15px -7px gray;
+        font-weight: bold;
+        
+        li {
+          padding: 7px 0px;
+          font-weight: 500;
+          cursor: pointer;
+
+          &:hover {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .header--logos {
+      cursor: pointer;
+      font-size: 20px;
+      margin-left: 25px;
+      color: #08376B;
+    }
+  }
+}

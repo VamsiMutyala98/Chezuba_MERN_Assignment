@@ -1,0 +1,46 @@
+// misc
+
+html {
+  box-sizing: border-box; // 1
+  // font-family: sans-serif; // 2
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; // 1
+}
+
+// IE10+ doesn't honor `<meta name="viewport">` in some cases.
+@at-root {
+  @-ms-viewport { width: device-width; }
+}
+
+// Body
+body {
+  margin: 0; // 1
+  font-family: $font-family-base;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base;
+  background-color: $body-bg;
+  height: inherit;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0; // Remove the margin in Firefox and Safari
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+// Suppress the focus outline on elements that cannot be accessed via keyboard.
+// This prevents an unwanted focus outline from appearing around elements that
+// might still respond to pointer events.
+[tabindex="-1"]:focus {
+  outline: none !important;
+}

@@ -1,0 +1,253 @@
+// Variables
+
+//
+// Color system
+//
+
+$primary: #439ED9 !default;
+$dark: rgba(37, 38, 49, 1) !default;
+$black: rgba(0, 0, 0, 1) !default;
+$secondary: rgba(0, 0, 0, 0.3) !default;
+$secondary-text: rgba(119, 140, 162, 1) !default;
+$info: rgba(44, 229, 246, 1) !default;
+$warning: rgba(255, 171, 43, 1) !default;
+$success: rgba(109, 210, 48, 1) !default;
+$danger: rgba(254, 14, 14, 1) !default;
+$light-danger: rgba(242, 74, 74, 1) !default;
+$light: rgba(152, 169, 188, 1) !default;
+$white: rgba(255, 255, 255, 1) !default;
+$light-brown: #6F7070 !default;
+$transparent: transparent !default;
+$icon-color: var(--icon-color) !default;
+
+// Backgrounds
+$secondary-bg: #F5F5F5 !default;
+
+
+// Button
+$primary-hover: #1d5b8e !default;
+$info-hover: rgba(43, 210, 226, 1) !default;
+$warning-hover: rgba(233, 158, 44, 1) !default;
+$success-hover: rgba(102, 193, 48, 1) !default;
+$danger-hover: rgba(252, 23, 23, 1) !default;
+$link: rgba(77, 124, 254, 1) !default;
+$white-hover: rgb(255, 255, 255, 0.5) !default;
+
+// Tags
+$form-tag-padding: 7px !default;
+$form-tag-button-height: 6vh !default;
+
+$tag-delete-btn-margin: 14px !default;
+$tag-delete-btn-size: 22px !default;
+
+$tag-badge-padding: 5px 10px 10px 20px !default;
+
+$secondary-tag: rgb(225, 226, 228, 0.7) !default;
+$secondary-tag-text: #6F7070 !default;
+$danger-tag: rgba(255, 241, 247, 1) !default;
+$warning-tag: rgba(255, 248, 238, 1) !default;
+$success-tag: rgba(243, 251, 238, 1) !default;
+$info-tag: rgba(238, 253, 254, 1) !default;
+$light-tag: rgba(241, 245, 255, 1) !default;
+
+//forms
+$input-dark: rgba(27, 30, 36, 1) !default;
+$input-border-dark: rgba(196, 196, 196, 1) !default;
+$input-placeholder-dark: rgba(0, 0, 0, 0.4) !default;
+$input-danger: rgb(8, 8, 8) !default;
+$input-success: rgba(240, 250, 234, 1) !default;
+$checkbox-warning: rgba(247, 148, 30, 1) !default;
+
+$checkbox-border-radius: 2px;
+$input-base-font-weight: 600;
+$input-medium-font-weight: 500;
+$input-light-font-weight: 300;
+
+$input-padding-horizontal: 16px;
+$input-padding-vertical: 25px;
+
+$input-disabled-background: rgba(248, 250, 251, 1) !default;
+
+//scroll bars
+
+$overflow-scroll-height: 80px;
+$overflow-scroll-background: rgba(0, 0, 0, 0.6);
+$overflow-scroll-box-shadow: 0 0 1px rgba(255, 255, 255, 0.6);
+$overflow-scroll-webkit-shadow: 0 0 1px rgba(255, 255, 255, 0.6);
+
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  success: $success,
+  info: $info,
+  warning: $warning,
+  danger: $danger,
+  light: $light,
+  dark: dark,
+) !default;
+
+$body-bg: rgba(255, 255, 255, 1) !default;
+
+// Fonts
+
+$font-size-h1: 55px !default;
+$font-size-h2: 45px !default;
+$font-size-h3: 35px !default;
+$font-size-h4: 22px !default;
+$font-size-h5: 16px !default;
+$font-size-h6: 14px !default;
+$font-paragraph: 14px !default;
+$font-family-base: "Lato", sans-serif;
+$font-family-medium: "Lato Medium", sans-serif;
+$font-family-light: "Lato Light", sans-serif;
+$font-weight-normal: normal !default;
+$font-size-lg: 1.25rem !default;
+$font-size-sm: 0.875rem !default;
+$font-weight-700: 700 !default;
+$font-weight-bold: bold !default;
+
+$line-height-base: 17px !default;
+$line-height-xs: 5px !default;
+$line-height-lg: 1.6rem !default;
+$line-height-sm: 1.5 !default;
+
+$border-radius-lg: 0.3rem !default;
+$border-radius-sm: 0.2rem !default;
+
+$enable-rounded: true !default;
+
+$btn-box-shadow: none !default;
+$btn-box-border: none !default;
+$none: none;
+
+$btn-outline-color: rgba(232, 236, 239, 1) !default;
+$btn-outline-disabled-background: rgba(227, 229, 231, 1) !default;
+
+$border-base: 1px solid;
+$btn-base-text-transform: uppercase;
+$btn-capital-text-transform: capitalize;
+$btn-padding: 17px 38px;
+
+$progress-bar-height: 6px;
+
+$base-border-radius: 0px !default;
+
+$pagination-btn-height: 40px;
+$pagination-btn-width: 40px;
+$pagination-child-margin: 30px;
+$pagination-font-size: 24px;
+$pagination-arrow-font-size: 18px;
+$pagination-arrow-padding-top: 5px;
+$pagination-arrow--disabled-padding-top: 10px;
+$pagination-btn-radius: 4px;
+
+$pagination-navigation-padding-y: 8px !default;
+$pagination-navigation-padding-x: 16px !default;
+$pagination-padding-y: 10px !default;
+$pagination-padding-x: 16px !default;
+$pagination-padding-y-sm: 6px !default;
+$pagination-padding-x-sm: 12px !default;
+$pagination-padding-y-lg: 13px !default;
+$pagination-padding-x-lg: 21px !default;
+$pagination-navigation-line-height-append: 18px;
+$pagination-navigation-line-height: 21px;
+$pagination-navigation-margin: 5px;
+$pagination-navigation-text-top: -2px;
+$pagination-line-height: 17px !default;
+
+$tabs-padding: 9px 5px;
+$tabs-margin: 65px;
+$tabs-border-base: 2px solid;
+$tabs-border-radius: 0px;
+
+// Modal
+
+$modal-inner-padding: 15px !default;
+$modal-lg: 650px !default;
+$modal-height: 650px !default;
+$label-margin: 13px;
+$label-align: left;
+
+$v-select-padding: 11px 15px;
+$v-select-li-child-margin: 15px;
+$v-select-li-margin: 27px;
+$v-dropdown-margin: 6px;
+$v-select-arrow-margin: 15px;
+
+$otp-padding: 17px 2px;
+
+$phone-width: 60px;
+$phone-input-padding: 15px;
+
+//header
+$no-px: 0px;
+$navbar-height: 64px;
+$navbar-padding: 20px 29px;
+$navbar-padding-mobile: 20px 15px;
+
+//container
+$background-color: rgba(248, 250, 251, 1) !default;
+
+//session
+$session-background: rgba(246, 247, 251, 1) !default;
+
+//session
+$session-background: rgba(246, 247, 251, 1) !default;
+
+// sidebar navigator
+$sidebar-background: rgba(0, 87, 184, 1) !default;
+$border-primary: rgba(247, 148, 30, 1) !default;
+$active-link: rgba(0, 153, 232, 1) !default;
+$link-color: rgba(119, 140, 162, 1) !default;
+
+//setup
+$setup-flex-width: 25%;
+$setup-flex-min-width: 250px;
+$setup-status-padding: 17px 18px;
+$setup-success: rgba(84, 181, 26, 1);
+
+//right sidebar
+$right-sidebar-boxshadow: -6px 0px 24px rgba(0, 0, 0, 0.25) !default;
+$panel-title-padding: 23px 20px;
+$panel-body-padding: 25px 35px;
+
+//stepper
+$stepper-success: rgba(17, 162, 4, 1);
+$stepper-connector: rgba(0, 0, 0, 0.4);
+
+//search User
+$result-font-size: 17px;
+$result-base-line-height: 20px;
+
+//search result
+$result-invalid-color: rgba(175, 1, 1, 1);
+$result-valid-color: rgba(1, 175, 71, 1);
+
+//registerSlots
+$slot-border-color: rgba(189, 189, 189, 1);
+$slot-margin: 0 26px 10px 0px;
+$slot-font-size: 9px;
+
+$width-size-60: 60px !default;
+$width-percentage-60: 60% !default;
+$width-percentage-70: 70% !default;
+$width-percentage-80: 80% !default;
+$height-size-50: 50px !default;
+
+$pixel-2: 2px !default;
+$pixel-5: 5px !default;
+$pixel-10: 10px !default;
+$pixel-12: 12px !default;
+$pixel-14: 14px !default;
+$pixel-15: 15px !default;
+$pixel-18: 18px !default;
+$pixel-20: 20px !default;
+$pixel-25: 25px !default;
+$pixel-30: 30px !default;
+
+$pixel--10: -10px !default;
+$pixel--30: -30px !default;
+
+$position-fixed: fixed !default;
+
+// $background-image: var(--background-image);

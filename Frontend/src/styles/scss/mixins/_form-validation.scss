@@ -1,0 +1,40 @@
+@mixin form-validation-state($state, $color, $disabled-background) {
+  .form-control,
+  .custom-select {
+    .was-validated &:#{$state},
+    &.is-#{$state} {
+      border-color: $color;
+
+      font-family: $font-family-medium;
+      font-size: $font-paragraph;
+      line-height: $line-height-base;
+      font-weight: $input-base-font-weight;
+      .is-valid {
+        background-image: $none;
+      }
+
+      &:focus {
+        box-shadow: $btn-box-shadow;
+        border: $border-base $color;
+      }
+
+      &:disabled,
+      &.disabled {
+        background: $disabled-background;
+        color: $dark;
+      }
+
+      ~ .invalid-feedback,
+      ~ .invalid-tooltip {
+        display: block;
+      }
+    }
+  }
+
+  .is-invalid {
+    background-image: $none !important;
+  }
+  .is-valid {
+    background-image: $none !important;
+  }
+}

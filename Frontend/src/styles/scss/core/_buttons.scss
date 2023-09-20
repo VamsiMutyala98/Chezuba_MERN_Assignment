@@ -1,0 +1,36 @@
+/*========== Buttons =========*/
+
+.btn {
+    text-transform: $btn-base-text-transform;
+    font-size: $font-paragraph;
+    line-height: $line-height-base;
+    font-family: $font-family-medium;
+    font-weight: $input-base-font-weight;
+    border: $btn-box-border;
+    padding: $btn-padding;
+    @include border-radius($base-border-radius);
+  
+    &:focus,
+    &.focus {
+      outline: $btn-box-border;
+      box-shadow: $btn-box-shadow;
+    }
+    // Disabled comes first so active can properly restyle
+    &.disabled,
+    &:disabled {
+      box-shadow: $btn-box-shadow;
+    }
+  
+    &:active,
+    &.active {
+      box-shadow: $btn-box-shadow;
+    }
+  
+    &:not(:disabled):not(.disabled):active:focus {
+      box-shadow: $btn-box-shadow;
+    }
+  }
+
+  .btn-primary {
+    @include buttonStyles($primary, $primary-hover, $white, $secondary, $secondary-text, $pixel-15, $pixel-18, $pixel-20, transparent);
+  }
